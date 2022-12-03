@@ -1,0 +1,127 @@
+/* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(42, 41, 41); */
+
+
+/* } */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100vmax;
+    background: rgb(42, 41, 41);
+    color: #fff;
+    box-sizing: border-box;
+    transition: width 0.3s linear;
+}
+
+.mainhead {
+    width: 8%;
+    margin-bottom: 100px;
+    color: aqua;
+    /* margin-left: 20px; */
+}
+
+#one {
+    color: skyblue;
+    /* font-size: 20px; */
+    margin-left: 1em;
+    font: optional;
+    font-stretch: ultra-condensed;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+#two {
+    margin-left: 1em;
+    color: rgb(10, 114, 155);
+    font-size: 1em;
+}
+
+ul {
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li {
+    display: block;
+    /* color: #fff; */
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 0.5em;
+    margin-bottom: 20px;
+}
+
+
+/* ****************Media Queries******************* */
+
+
+/* ****************DeskTop And Laptops***************** */
+
+@media all and(min-width: 1001px) {
+    h6 {
+        width: 8%;
+        font-size: 12px;
+    }
+    h6 span {
+        font-size: 12px;
+        width: 8%;
+    }
+}
+
+
+/* 
+**********************Tablets and Ipads*****************
+
+@media all and(min-width: 1000px) and (min-width: 700px) {
+    h6 {
+        width: 8%;
+        font-size: 8px;
+        margin-left: 0;
+    }
+    h6 span {
+        width: 8%;
+        font-size: 8px;
+    }
+}
+
+
+******************** Big Mobile Phones*********************
+
+@media all and(min-width: 699px) and (min-width: 520px) {
+    h6 {
+        width: 8%;
+        font-size: 4px;
+        margin-left: 0;
+    }
+    h6 span {
+        width: 8%;
+        font-size: 4px;
+    }
+}
+
+
+********************Mobile Phones*********************
+
+@media all and(min-width: 510px) {
+    h6 {
+        width: 8%;
+        font-size: 2px;
+        margin-left: 0;
+    }
+    h6 span {
+        width: 8%;
+        font-size: 2px;
+    }
+} */

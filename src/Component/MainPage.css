@@ -1,0 +1,542 @@
+.main_container {
+    position: absolute;
+    height: 100vmax;
+    width: 90vw;
+    left: 10%;
+    top: 10%;
+    background-color: #282c34;
+    box-sizing: border-box;
+    /* border: 1px solid chocolate; */
+}
+
+.heading {
+    margin-left: 20px;
+    position: relative;
+    height: 60px;
+    align-items: start;
+    /* border: 1px solid white; */
+}
+
+.heading h1 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.headpart2 {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_card {
+    height: 100px;
+    width: 60vw;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.items {
+    padding-right: 30px;
+    border-right: 1px solid rgb(90, 89, 89);
+}
+
+.items:last-child {
+    border: none;
+}
+
+.items p {
+    padding: 0;
+    font-size: 8px;
+    color: rgb(176, 175, 175);
+}
+
+.items span {
+    font-size: 16px;
+    padding: 0;
+}
+
+.container_card2 {
+    height: 100px;
+    width: 40vw;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.container-porgress {
+    margin-left: 100px;
+    height: 5px;
+    /* border: 1px solid red; */
+    width: 250px;
+    border-radius: 15%;
+    background-color: #1b2438;
+    position: relative;
+}
+
+.container-porgress .progressbar {
+    /* margin-left: 20px; */
+    position: absolute;
+    height: 5px;
+    width: 105px;
+    border-radius: 15%;
+    background-color: rgb(10, 114, 155);
+    animation: progress-animation 3s forwards;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 42%;
+    }
+}
+
+.container_card2 p {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.twogrid {
+    /* height: 340px; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid crimson;
+}
+
+.twogrid1 {
+    margin-top: 40px;
+    height: 300px;
+    width: 47%;
+    /* border: 1px solid blueviolet; */
+    background-color: rgb(42, 41, 41);
+}
+
+.twogrid1 p {
+    margin-left: 20px;
+    font-size: 15px;
+    /* color: rgb(176, 175, 175); */
+    font-size: bold;
+}
+
+#hed {
+    color: rgb(176, 175, 175);
+}
+
+.card_hold {
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid rosybrown; */
+}
+
+.cardest1 {
+    height: 220px;
+    /* border: 1px solid orange; */
+    width: 40%;
+    /* position: relative; */
+}
+
+.cardest2 {
+    height: 220px;
+    /* border: 1px solid greenyellow; */
+    width: 60%;
+    /* position: relative; */
+}
+
+.cardest1 p {
+    font-size: 9px;
+    align-items: center;
+}
+
+.cardest2 p {
+    font-size: 9px;
+    align-items: center;
+}
+
+.twogrid2 {
+    margin-top: 40px;
+    height: 300px;
+    width: 47%;
+    /* border: 1px solid blue; */
+}
+
+.twogrid2 p {
+    margin-left: 20px;
+    font-size: 15px;
+    color: rgb(176, 175, 175);
+    font-size: bold;
+}
+
+.three_grid {
+    margin: 0;
+    height: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid goldenrod;
+}
+
+.threegrid1 {
+    /* margin-left: 20px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 240px;
+    width: 31%;
+    border: 1px solid blueviolet;
+    background-color: rgb(42, 41, 41);
+}
+
+.head {
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid cyan; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin-left: 10px;
+    color: rgb(176, 175, 175);
+    font-size: 15px;
+    padding: 3px;
+}
+
+.three_dots:after {
+    cursor: pointer;
+    color: rgb(176, 175, 175);
+    content: '\2807';
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+
+.dropdown {
+    position: absolute;
+    right: 10px;
+    background-color: #66D;
+    outline: none;
+    opacity: 0;
+    z-index: -1;
+    max-height: 0;
+    transition: 0.1s, 0.1s, 5s;
+}
+
+.dropdown_container {
+    outline: none;
+}
+
+.dropdown_containerr:focus .dropdown {
+    opacity: 1;
+    z-index: 100;
+    /* max-height: 100vh; */
+    transition: 0.2s, 0.2s 0.2s;
+}
+
+.bar {
+    height: 210px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.barCircle {
+    height: 210px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px dotted blueviolet; */
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    color: #282c34;
+    /* background: cornflowerblue; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-color: #282c34;
+    border-radius: 50%;
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px -2px 2px -1px rgba(146, 46, 46, 0.7), 2px 2px 2px -1px rgba(120, 35, 35, 0.15);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 3px -1px rgba(20, 15, 41, 0.2), inset -2px -2px 3px -1px rgba(39, 31, 54, 0.7);
+    /* -0.5px, */
+    /* -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05) */
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+#circle2 {
+    fill: none;
+    stroke: url(#GradientColor2);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+#circle3 {
+    fill: none;
+    stroke: url(#GradientColor3);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+#svgletter {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 472-472*0.65 = 165.2 */
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 165;
+    }
+}
+
+.barContent {
+    height: 210px;
+    width: 50%;
+    /* border: 1px solid blue; */
+    /* padding-left: 10px; */
+    /* padding-top: 30px; */
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.barContent1 {
+    color: rgb(176, 175, 175);
+    padding: 15px;
+    font-size: 10px;
+    /* border: 1px solid red; */
+}
+
+.barContent2 {
+    color: rgb(176, 175, 175);
+    font-size: 8px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-right: 2px solid rgb(90, 89, 89);
+    border-style: calc(100-5%) white;
+}
+
+.barContent3 {
+    color: rgb(176, 175, 175);
+    padding: 15px;
+    font-size: 10px;
+    /* border: 1px solid red; */
+}
+
+.threegrid2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 240px;
+    width: 31%;
+    /* border: 1px solid blueviolet; */
+    background-color: rgb(42, 41, 41);
+}
+
+.threegrid3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 240px;
+    width: 31%;
+    /* border: 1px solid blueviolet; */
+    background-color: rgb(42, 41, 41);
+}
+
+@media all and(min-width: 1001px) {}
+
+@media screen and (max-width: 768px) {
+    .heading h1 {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .container_card {
+        margin-left: 10px;
+        /* border: 1px solid red; */
+    }
+    .items {
+        padding-right: 10px;
+        /* border-right: 1px solid rgb(90, 89, 89); */
+    }
+    .items p {
+        padding: 0;
+        font-size: 4px;
+    }
+    .items span {
+        font-size: 10px;
+    }
+    .container_card2 {
+        margin-left: 15px;
+        /* border: 1px solid red; */
+    }
+    .container-porgress {
+        margin-left: 80px;
+        /* height: 5px;
+        border: 1px solid red;
+        width: 250px;
+        border-radius: 15%;
+        background-color: #1b2438;
+        position: relative; */
+    }
+    .container-porgress .progressbar {
+        margin-left: 15px;
+    }
+    .container_card2 p {
+        margin-left: 5px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .twogrid1 p {
+        margin-left: 18px;
+        font-size: 12px;
+    }
+    .cardest1 p {
+        font-size: 7px;
+    }
+    .cardest2 p {
+        font-size: 7px;
+    }
+    .twogrid2 p {
+        margin-left: 18px;
+        font-size: 12px;
+    }
+    .three_grid {
+        display: block;
+    }
+    .threegrid1 {
+        width: 100%;
+    }
+    .threegrid2 {
+        width: 100%;
+    }
+    .threegrid3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main_container {
+        position: absolute;
+        height: 100vmax;
+    }
+    .heading h1 {
+        font-size: 10px;
+        font-weight: 60;
+    }
+    .headpart2 {
+        display: block;
+    }
+    .container_card {
+        width: 100%;
+        margin-left: 10px;
+        /* border: 1px solid red; */
+    }
+    .container_card2 {
+        margin-left: 10px;
+        width: 100%;
+    }
+    .items {
+        padding-right: 10px;
+    }
+    .items p {
+        font-size: 4px;
+    }
+    .items span {
+        font-size: 8px;
+        padding: 0;
+    }
+    .container-porgress {
+        margin-left: 50px;
+        /* border: 1px solid red; */
+    }
+    .container_card2 p {
+        margin-left: 0px;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .twogrid {
+        display: block;
+        position: relative;
+    }
+    .twogrid1 {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .twogrid1 p {
+        margin-left: 40px;
+    }
+    .twogrid2 {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .three_grid {
+        /* position: absolute; */
+        margin-top: 50px;
+        display: block;
+    }
+    .threegrid1 {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .threegrid2 {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .threegrid3 {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
