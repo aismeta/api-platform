@@ -27,8 +27,7 @@
 
 #one {
     color: skyblue;
-    /* font-size: 20px; */
-    margin-left: 1em;
+    margin-left: 10px;
     font: optional;
     font-stretch: ultra-condensed;
     font-weight: lighter;
@@ -36,9 +35,9 @@
 }
 
 #two {
-    margin-left: 1em;
     color: rgb(10, 114, 155);
-    font-size: 1em;
+    font-size: 0.8em;
+    font-display: bold;
 }
 
 ul {
